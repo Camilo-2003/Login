@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-linear-to-r/srgb from-green-800 to-red-800 animated-gradient">
+    <style>
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .animated-gradient {
+    background: linear-gradient(-45deg, #065f46, #b91c1c, #16a34a, #dc2626);
+    background-size: 400% 400%;
+    animation: gradient-animation 10s ease infinite;
+  }
+</style>
+    <div class="justify-self-center">
+    <div class="bg-[url(/img/mountains.jpg)] bg-center">
+<div class="flex min-h-full flex-col justify-center px-8 py-10 lg:px-15 mt-3 rounded-2xl bg-linear-to-r/srgb from-green-700 to-red-700">
+  <div class="sm:mx-auto sm:w-full sm:max-w-sm">
+    <img class="mx-auto h-25 w-25" src="icons8-usuario-100.png" alt="Your Company">
+    <h2 class="mt-1 text-center text-2xl/3 font-bold tracking-tight text-white">Iniciar sesión</h2>
+  </div>
+
+  <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+    <form class="space-y-6" action="#" method="POST">
+      <div>
+        <label for="email" class="mt-1 block text-lg font-medium text-white">Correo</label>
+        <div class="mt-2">
+          <input type="email" name="email" id="email" autocomplete="email" required class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6" placeholder="Ingresa tu correo">
+        </div>
+      </div>
+
+      <div>
+        <div class="flex items-center justify-between">
+          <label for="password" class="mt-1 block text-lg font-medium text-white">Contraseña</label>
+          <div class="text-sm">
+            <a href="#" class="font-semibold text-black-600 hover:text-green-500 text-base">Olvidaste tu contraseña?</a>
+          </div>
+        </div>
+        <div class="mt-2">
+          <input type="password" name="password" id="password" autocomplete="current-password" required class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6" placeholder="Ingresa tu contraseña">
+        </div>
+      </div>
+
+      <div>
+        <button type="submit" class="flex w-full justify-center rounded-md bg-red-600 px-3 py-1.5 text-sm/6 font-semibold text-white shadow-xs hover:bg-green-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Ingresar</button>
+      </div>
+    </form>
+
+    <p class="mt-3 text-center text-base text-black-500 font-bold">
+      ¿Aún no eres miembro?
+      <a href="#" class="font-semibold text-white hover:text-green-500">Prueba gratis por 14 días.</a>
+    </p>
+  </div>
+</div>
+    </div>
+    </div>
+  </body>
+</html>
